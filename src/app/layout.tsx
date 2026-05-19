@@ -26,6 +26,10 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} h-full antialiased`}>
       <head>
+        <meta
+          name="facebook-domain-verification"
+          content="c7q0ehdxbcu6qbkj3vsn78mb4bz2i5"
+        />
         <script
           type="module"
           src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
