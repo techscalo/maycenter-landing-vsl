@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { PostHogProvider } from "@/components/posthog-provider";
+import { MetaPixel } from "@/components/meta-pixel";
 import "./globals.css";
 
 const inter = Inter({
@@ -36,6 +37,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col">
+        <MetaPixel />
         <PostHogProvider>{children}</PostHogProvider>
       </body>
     </html>
